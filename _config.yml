@@ -2,7 +2,7 @@
 cover: /img/bg_img.jpg
 logo: /img/logo.png
 top_saying:
-- title: YOU'VE MADE A <span>BRAVE</span> DECISION, WELCOME.
+- title: GLAD TO SEE U AND WELCOME TO YANGZJ1992 'S BLOG.  
 - content: 每一个不曾起舞的日子都是对生命的辜负。
 bottom_saying: 虽然还没想好写点什么，但是总觉得这里放句话比较和谐。
 # Content
@@ -23,11 +23,11 @@ works:
 duoshuo: duoshuo_name
 
 # Miscellaneous
-github: https://github.com/
+github: https://github.com/yangzj1992
 twitter: https://twitter.com/
 facebook: https://www.facebook.com/
-google: https://google.com/
-weibo: http://weibo.com/
+google: https://google.com/yangzj1992
+weibo: http://weibo.com/yangzj1992
 
 #about  timeline
 timeline:
