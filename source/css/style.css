@@ -477,7 +477,7 @@ a.custom-button span {
 	display: block;
 	top: 50%;
 	margin-top: -15px;
-	left: 30px;
+	left: 20px;
 }	
 .logo img {
 	display:block;
@@ -489,13 +489,6 @@ a.custom-button span {
 	-moz-transition: all ease .2s;
 	-o-transition: all ease .2s;
 	transition: all ease .2s;
-}
-.logo img:hover {
-	display:block;
-	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=75)";
-	-khtml-opacity: .75;
-	-moz-opacity: .75;
-	opacity: .75;
 }
 .navbar {
 	position: fixed;
@@ -1531,14 +1524,14 @@ hr.byline-accent {
 ******************************************************* */
 #statement {
 	background-color: #fff;
-	padding: 60px 0 20px;
+	padding: 20px 0 10px;
 }
 
 #statement p {
-	font-family: 'Georgia', serif, Helvetica, "Helvetica Neue", "Hiragino Sans GB", "Microsoft YaHei", "Source Han Sans CN", "WenQuanYi Micro Hei", Arial, sans-serif;
-	font-style: italic;
+	/*font-style: italic;*/
+	letter-spacing: 1px;
 	font-size: 20px;
-	color: #333;
+	color: #151515;
 }
 
 #statement i {
@@ -3085,7 +3078,7 @@ button.send{
 * Global footer, (all pages)
 ******************************************************* */
 footer {
-	padding:5% 0 0;
+	padding:3% 0 0;
 	background:#151515;
 	z-index: 9;
 	position: relative;
@@ -3198,6 +3191,10 @@ footer .footer_bottom {
 .beige-dk,
 .poster.beige-dk:before {
 	background-color: rgb(247, 247, 247);
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
+	-khtml-opacity: .8;
+	-moz-opacity: .8;
+	opacity: .8;
 }
 .white,
 .poster.white:before {

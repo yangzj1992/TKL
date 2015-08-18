@@ -82,7 +82,7 @@ $(document).ready(function($) {
 		            var st = $(this).scrollTop();
 		            divs.css({
 		                'margin-top': -(st / 0) + "px",
-		                'opacity': 0.9 - st / 1600
+		                'opacity': 0.8 - st / 1600
 		            });
 		        });
 		    });
@@ -168,6 +168,13 @@ $(document).ready(function($) {
 	        );
 	        document.querySelector('head').appendChild(msViewportStyle);
 	    }
+
+	    $(".logo img").hover(function() {
+	    	$(this).css('background','url(../img/oursbrun.png);')
+	    }, function() {
+	    	$(this).css('background','url(../img/logo.png);')
+	    	/* Stuff to do when the mouse leaves the element */
+	    });
 
 	}); // Document Ready
 
