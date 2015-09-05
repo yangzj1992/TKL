@@ -1,6 +1,7 @@
 # config
 cover: /img/bg_img.jpg
 logo: /img/logo.png
+logoc: /img/oursbrun.png
 top_saying:
 - title: GLAD TO SEE U, WELCOME TO YANGZJ1992 'S BLOG.  
 - content: 每一个不曾起舞的日子都是对生命的辜负 —— 尼采 《查拉图斯特拉如是说》
@@ -20,12 +21,10 @@ works:
   works_url: /atom.xml
 
 #duoshuo name
-duoshuo: duoshuo_name
+duoshuo_shortname: yangzj1992
 
 # Miscellaneous
 github: https://github.com/yangzj1992
-twitter: https://twitter.com/
-facebook: https://www.facebook.com/
 google: https://google.com/yangzj1992
 weibo: http://weibo.com/yangzj1992
 
@@ -46,3 +45,7 @@ links:
   link: http://go.kieran.top/
 - name: Name
   link: http://domain.com/
+
+#Analytics
+cnzz: true  
+

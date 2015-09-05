@@ -1,13 +1,17 @@
 <% permalink = config.url + config.root + post.path %>
 <section id="intro">
     <div class="container">
-        <div class="row col-md-offset-2">
-            <div class="col-md-8">
+        <div class="col-md-8 col-md-offset-2">
+            <div>
     			<%- partial('post/meta') %>
                 <h1><%- post.title %></h1>
             </div>
         </div>
         <div class="col-md-8 col-md-offset-2">
+            <div id="toc" class="toc-article">
+                <strong class="toc-title">文章目录</strong>
+                <%- toc(post.content) %>
+            </div>
       		<%- post.content %>
             <div class="clearfix"></div>
             <hr class="nogutter">

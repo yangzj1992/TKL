@@ -78,16 +78,19 @@ h4,
 h5,
 h6 {
 	margin-top: 0;
-    font-family: "Open Sans", "Helvetica Neue", "Helvetica", "Hiragino Sans GB", "Microsoft YaHei", "Source Han Sans CN", "WenQuanYi Micro Hei", Arial, sans-serif;
+  font-family: "Open Sans", "Helvetica Neue", "Helvetica", "Hiragino Sans GB", "Microsoft YaHei", "Source Han Sans CN", "WenQuanYi Micro Hei", Arial, sans-serif;
 	font-weight: 400;
 	font-weight: normal;
 	color: #151515;
 }
+h1 {
+	font-size: 32px;
+}
 h2 {
 	text-transform: uppercase;
 	font-style: normal;
-	font-weight: 400;
-	font-size: 22px;
+	font-weight: 700;
+	font-size: 26px;
 	line-height: 30px;
 	letter-spacing: 1px;
 }
@@ -98,14 +101,19 @@ h2 {
 }
 h3 {
 	font-style: normal;
-	font-weight: 400;
+	font-weight: 700;
 	line-height: 37px;
 	font-size: 20px;
 	margin-top: 0;
 }
+@media (max-width:768px) {
+	h3 {
+		font-size: 20px;
+	}
+}
 h4 {
 	font-style: normal;
-	font-weight: 400;
+	font-weight: 700;
 	font-size: 18px;
 	line-height: 30px;
 	color: #333333;
@@ -136,13 +144,26 @@ section {
 	z-index: 4;
 }
 a,
-a:hover,
 a:active,
 a:focus,
+a:hover,
 a:visited,
 a:link {
 	color: #151515;
 	text-decoration: none;
+}
+
+.container p a,
+.container p a:active,
+.container p a:focus,
+.container p a:visited,
+.container p a:link {
+	color: #008e59;
+	text-decoration: none;
+}
+.container p a:hover{
+	color: #004229;
+	text-decoration: underline;
 }
 [class*="col-"] {
 	padding-top: 15px;
@@ -3330,3 +3351,39 @@ footer .footer_bottom {
 .icon-sina-weibo:before { content: "\e666"; }
 .icon-github:before { content: "\e636"; }
 /*---------------- END ------------------------*/
+
+
+/*toc*/
+.toc-article{
+  background-color:#eeeeee;
+  padding:1em;
+  border-radius:5px;
+}
+#toc{
+	line-height:1.5em;
+  float:right;
+}
+#toc .toc{
+	margin-top: 10px;
+	padding:0;
+}
+#toc .toc .toc-child{
+	padding-left: 20px;
+}
+#toc .toc-link{
+	color:#58c0af;
+}
+#toc .toc li{
+  list-style-type:none;
+}
+
+
+
+
+
+
+
+
+
+
+

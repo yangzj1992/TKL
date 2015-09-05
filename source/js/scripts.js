@@ -28,9 +28,9 @@ $(document).ready(function($) {
 			autohidemode: false,
 			zindex: "100", // change z-index for scrollbar div
         	scrollspeed: 60, // scrolling speed
-        	mousescrollstep: 40,
-        	gesturezoom: false,
-        	horizrailenabled: false,
+        	mousescrollstep: 40,// mouse scrolling speed
+        	gesturezoom: false,//上缩放框激活时，间距输出/输入
+        	horizrailenabled: false,//管理水平滚动
         	cursorcolor: "#151515",
 	        boxzoom: false,
 	        cursorborder: "0 solid #202020",
@@ -45,8 +45,8 @@ $(document).ready(function($) {
 
 			inClass               :   'fade-in',
 			outClass              :   'fade-out-down-sm',
-			inDuration            :    900,
-			outDuration           :    800,
+			inDuration            :    500,
+			outDuration           :    500,
 			linkElement           :   '.animsition-link', 
 			//e.g. linkElement   :   'a:not([target="_blank"]):not([href^=#])'
 			loading               :    true,
@@ -58,7 +58,6 @@ $(document).ready(function($) {
 			                        ],
 			//"unSupportCss" option allows you to disable the "animsition" in case the css property in the array is not supported by your browser. 
 			//The default setting is to disable the "animsition" in a browser that does not support "animation-duration".
-
 			overlay               :   false,
 
 			overlayClass          :   'animsition-overlay-slide',
@@ -169,11 +168,12 @@ $(document).ready(function($) {
 	        document.querySelector('head').appendChild(msViewportStyle);
 	    }
 
-	    $(".logo img").hover(function() {
-	    	$(this).css('background','url(../img/oursbrun.png);')
+	    $(".logo").hover(function() {
+	    	$(this).find("#white-logo").css('display','none');
+	    	$(this).find("#brown-logo").css('display','block');
 	    }, function() {
-	    	$(this).css('background','url(../img/logo.png);')
-	    	/* Stuff to do when the mouse leaves the element */
+	    	$(this).find("#brown-logo").css('display','none');
+	    	$(this).find("#white-logo").css('display','block');
 	    });
 
 	}); // Document Ready
