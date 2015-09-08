@@ -5,6 +5,7 @@ Execute the following command and modify theme in <code>_config.yml</code> to <c
 ```
 if u like the original version:
 git clone https://github.com/SuperKieran/TKL.git
+
 or come to my modify version:
 git clone https://github.com/yangzj1992/TKL.git
 ```

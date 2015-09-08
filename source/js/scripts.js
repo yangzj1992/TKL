@@ -1,5 +1,14 @@
 $(document).ready(function($) {
     "use strict";
+    var scrollstatus = $(document).scrollTop();
+    if(scrollstatus >10){
+    	 $(".lightnav .navbar-inner").addClass("lightnav-alt");
+       $(".darknav .navbar-inner").addClass("darknav-alt");
+    }else{
+    	 $(".lightnav .navbar-inner").removeClass("lightnav-alt");
+       $(".darknav .navbar-inner").removeClass("darknav-alt");
+    }
+
 
     $(window).scroll(function () {
         if ($(document).scrollTop() > 10) {
@@ -12,7 +21,8 @@ $(document).ready(function($) {
     });
 
 	$(document).ready(function($) {
-
+		var wall_number = "url(http://7bv937.com1.z0.glb.clouddn.com/qcyoung/TKL/wall-"+Math.ceil(Math.random()*10)+".jpg)";
+      $(".element-img").css('background-image',wall_number);
 		// Slidebars off-canvas menu
 		$.slidebars();
 
@@ -81,7 +91,7 @@ $(document).ready(function($) {
 		            var st = $(this).scrollTop();
 		            divs.css({
 		                'margin-top': -(st / 0) + "px",
-		                'opacity': 0.8 - st / 1600
+		                'opacity': 0.7 - st / 1600
 		            });
 		        });
 		    });
@@ -93,7 +103,7 @@ $(document).ready(function($) {
 		            var st = $(this).scrollTop();
 		            divs.css({
 		                'margin-top': -(st / 0) + "px",
-		                'opacity': 0.8 - st / 1600
+		                'opacity': 0.7 - st / 1600
 		            });
 		        });
 		    });
@@ -105,7 +115,7 @@ $(document).ready(function($) {
 		            var st = $(this).scrollTop();
 		            divs.css({
 		                'margin-top': -(st / 0) + "px",
-		                'opacity': 0.9 - st / 300
+		                'opacity': 0.7 - st / 300
 		            });
 		        });
 		    });

@@ -1,11 +1,11 @@
 # config
 cover: /img/bg_img.jpg
-logo: /img/logo.png
-logoc: /img/oursbrun.png
+logo: http://7bv937.com1.z0.glb.clouddn.com/qcyoung/TKL/logo.png
+logoc: http://7bv937.com1.z0.glb.clouddn.com/qcyoung/TKL/oursbrun.png
 top_saying:
 - title: GLAD TO SEE U, WELCOME TO YANGZJ1992 'S BLOG.  
 - content: 每一个不曾起舞的日子都是对生命的辜负 —— 尼采 《查拉图斯特拉如是说》
-bottom_saying:  而奇迹每天都在发生 (Miracles happen every day) —— 《阿甘正传》
+bottom_saying:  奇迹每天都在发生 (Miracles happen every day) —— 《阿甘正传》
 # Content
 excerpt_link: Read More
 
@@ -15,10 +15,10 @@ highlightjs: vs
 
 #Works
 works:
-- works_name: AAA
-  works_url: /
-- works_name: BBB
-  works_url: /atom.xml
+# - works_name: AAA
+#   works_url: /
+# - works_name: BBB
+#   works_url: /atom.xml
 
 #duoshuo name
 duoshuo_shortname: yangzj1992
@@ -43,8 +43,8 @@ timeline:
 links:
 - name: Kieran
   link: http://go.kieran.top/
-- name: Name
-  link: http://domain.com/
+# - name: Name
+#   link: http://domain.com/
 
 #Analytics
 cnzz: true  

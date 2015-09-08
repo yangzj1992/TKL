@@ -323,6 +323,7 @@ input#delivery {
 	background-size: cover;
 	background-position: center center;
 	background-repeat: no-repeat;
+	background-attachment: fixed;
 	height: 100%;
 	position: relative;
 	z-index: 10;
@@ -518,7 +519,7 @@ a.custom-button span {
 .navbar .nav {
 	width:100%;
 	text-align:center;
-	height:60px;		
+	height:50px;		
 }
 .navbar .nav > li {
 	float:none;
@@ -536,8 +537,8 @@ a.custom-button span {
 }
 .navbar .nav > li > a {
 	display: block;
-	padding:0px 10px;
-	margin:23px 0px;
+	padding:0 10px;
+	margin:16px 0px;
 	color: #151515;
 	font-family: 'Montserrat', "Open Sans", "Helvetica Neue", "Helvetica", "Hiragino Sans GB", "Microsoft YaHei", "Source Han Sans CN", "WenQuanYi Micro Hei", Arial, sans-serif;
 	text-transform: uppercase;
@@ -557,7 +558,7 @@ a.custom-button span {
 	line-height: 14px;
 	text-transform: uppercase;
 	font-size: 11px;
-	margin:23px 0px;
+	margin:16px 0px;
 	border-right:1px solid #aaa;
 	padding: 0px 10px;
 }
@@ -664,7 +665,7 @@ nav i.icon-basic-eye {
 button.menu-icon {
 	position: fixed;
 	right: 30px;
-	top: 21px;
+	top: 14px;
 	margin-top: 0;
 	z-index: 2050;
 	padding: 0;
@@ -885,12 +886,21 @@ span.sb-caret { /* Caret Down */
 		background-attachment: scroll !important
 	}
 	.heightblock {
-		display: none
+		display: none;
 	}
 }
 @media (max-width:767px) {
 	#hero p {
-		display: none
+		display: none;
+	}
+	footer .copy{
+		display:none;
+	}
+	.center-me{
+		display:none;
+	}
+	#statement{
+		display:none;
 	}
 }
 /********************************************************/
@@ -3099,10 +3109,14 @@ button.send{
 * Global footer, (all pages)
 ******************************************************* */
 footer {
-	padding:3% 0 0;
+	padding:1% 0 1%;
 	background:#151515;
 	z-index: 9;
 	position: relative;
+}
+footer .footer{
+	width: 95%;
+	margin:0 auto;
 }
 footer p.m_14 {
 	color:#767D84;
@@ -3213,9 +3227,9 @@ footer .footer_bottom {
 .poster.beige-dk:before {
 	background-color: rgb(247, 247, 247);
 	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
-	-khtml-opacity: .8;
-	-moz-opacity: .8;
-	opacity: .8;
+	-khtml-opacity: .7;
+	-moz-opacity: .7;
+	opacity: .7;
 }
 .white,
 .poster.white:before {
@@ -3302,10 +3316,12 @@ footer .footer_bottom {
 	padding-right: 10px;
 	border: 1px solid gray;
 	border-radius: 20px;
+	color:#666!important;
 }
 .readMore a:hover {
 	background-color: gray;
-	color: #fff;
+	color: #fff!important;
+	text-decoration: none!important;
 }
 .pagination {
 	width: 66%;
@@ -3376,14 +3392,3 @@ footer .footer_bottom {
 #toc .toc li{
   list-style-type:none;
 }
-
-
-
-
-
-
-
-
-
-
-
