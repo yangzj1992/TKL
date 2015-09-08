@@ -549,6 +549,9 @@ a.custom-button span {
 	text-shadow: none;
 	border-right:1px solid #aaa;
 }
+.navbar .nav > li > a > i{
+	font-size: 13px;
+}
 .navbar .nav li.nolink {
 	font-family: 'Montserrat', "Open Sans", "Helvetica Neue", "Helvetica", "Hiragino Sans GB", "Microsoft YaHei", "Source Han Sans CN", "WenQuanYi Micro Hei", Arial, sans-serif;
 	color: #151515;
@@ -3355,7 +3358,7 @@ footer .footer_bottom {
 	max-width: 100%;
 }
 /* Import the font file with the icons in it */
-@font-face { font-family: 'icons'; src:  url('../fonts/icons.woff') format('woff'); font-weight: normal; font-style: normal; }
+@font-face { font-family: 'fontawesome-webfont'; src:  url('../fonts/fontawesome-webfont.woff') format('woff'); font-weight: normal; font-style: normal; }
 /* Apply these base styles to all icons */
 .icon-feed:before, .icon-twitter:before, .icon-google-plus:before, .icon-facebook:before, .icon-sina-weibo, .icon-github{ font-family: 'icons'; speak: none; font-style: normal; font-weight: normal; font-variant: normal; text-transform: none; line-height: 1; -webkit-font-smoothing: antialiased; text-decoration: none; }
 /* Each icon is created by inserting the corret character into the

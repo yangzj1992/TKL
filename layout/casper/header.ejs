@@ -72,15 +72,15 @@
                             <li><a href="/" class="animsition-link website-title"><%- config.title %></a></li>
                             <li><a href="<%- config.root %><%- config.archive_dir %>" class="animsition-link" title="archive">归档</a></li>
                             <% if(theme.github){ %>
-                            <li><a href="<%- theme.github %>" title="Github" target="_blank"><i class="icon-github"></i></a></li>
+                            <li><a href="<%- theme.github %>" title="Github" target="_blank"><i class="fa fa-github"></i></a></li>
                             <% } %>
-                            <% if(theme.google){ %>
-                            <li><a href="<%- theme.google %>" title="Google-Plus" target="_blank"><i class="icon-google-plus"></i></a></li>
-                            <% } %>
+                            <li><a href="" title="Weixin" target="_blank"><i class="fa fa-weixin"></i></a></li>
                             <% if(theme.weibo){ %>
-                            <li><a href="<%- theme.weibo %>" title="Sina-Weibo" target="_blank"><i class="icon-sina-weibo"></i></a></li>
+                            <li><a href="<%- theme.weibo %>" title="Sina-Weibo" target="_blank"><i class="fa fa-weibo"></i></a></li>
                             <% } %>
-                            <li class="nolink">Always positive.</li>
+                            <% if(theme.twitter){ %>
+                            <li><a href="<%- theme.twitter %>" title="twitter" target="_blank"><i class="fa fa-twitter"></i></a></li>
+                            <% } %>
                             <li class="nolink"><span>Welcome!</span></li>
                         </ul>
                     </nav>

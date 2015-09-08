@@ -17,20 +17,14 @@
             <div class="social">
                 <ul>
                     <% if(theme.github){ %>
-                    <li><a href="<%- theme.github %>" title="Github" target="_blank"><i class="icon-github"></i></a>&nbsp;</li>
+                    <li><a href="<%- theme.github %>" title="Github" target="_blank"><i class="fa fa-github"></i>&nbsp;</a></li>
+                    <% } %>
+                    <li><a href="" title="Weixin" target="_blank"><i class="fa fa-weixin"></i>&nbsp;</a></li>
+                    <% if(theme.weibo){ %>
+                    <li><a href="<%- theme.weibo %>" title="Sina-Weibo" target="_blank"><i class="fa fa-weibo"></i>&nbsp;</a></li>
                     <% } %>
                     <% if(theme.twitter){ %>
-                    <li><a href="<%- theme.twitter %>" title="Twitter" target="_blank"><i class="icon-twitter"></i></a>&nbsp;</li>
-                    <% } %>
-                    <li><a href="<%- theme.twitter %>" title="Twitter" target="_blank"><i class="fa fa-weixin"></i></a>&nbsp;</li>
-                    <% if(theme.facebook){ %>
-                    <li><a href="<%- theme.facebook %>" title="Facebook" target="_blank"><i class="icon-facebook"></i></a>&nbsp;</li>
-                    <% } %>
-                    <% if(theme.google){ %>
-                    <li><a href="<%- theme.google %>" title="Google-Plus" target="_blank"><i class="icon-google-plus"></i></a>&nbsp;</li>
-                    <% } %>
-                    <% if(theme.weibo){ %>
-                    <li><a href="<%- theme.weibo %>" title="Sina-Weibo" target="_blank"><i class="icon-sina-weibo"></i></a>&nbsp;</li>
+                    <li><a href="<%- theme.twitter %>" title="twitter" target="_blank"><i class="fa fa-twitter"></i>&nbsp;</a></li>
                     <% } %>
                 </ul>
             </div>
