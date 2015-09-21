@@ -43,9 +43,12 @@ timeline:
 links:
 - name: Kieran
   link: http://go.kieran.top/
-# - name: Name
-#   link: http://domain.com/
+
 
 #Analytics
 cnzz: true  
+cnzzaccount: 1000263347
+
+img_server: 
+
 

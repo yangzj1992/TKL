@@ -21,8 +21,49 @@ $(document).ready(function($) {
     });
 
 	$(document).ready(function($) {
-		var wall_number = "url(http://7bv937.com1.z0.glb.clouddn.com/qcyoung/TKL/wall-"+Math.ceil(Math.random()*10)+".jpg)";
-      $(".element-img").css('background-image',wall_number);
+		var wall_number = "url(http://7bv937.com1.z0.glb.clouddn.com/qcyoung/TKL/wall-"+Math.ceil(Math.random()*12)+".jpg)";
+		// var wall_number = "url(http://img1.imgtn.bdimg.com/it/u=479037135,1190319691&fm=21&gp=0.jpg)";
+    $(".element-img").css('background-image',wall_number);
+
+    // 定位二维码
+    var footerheight = $("footer").outerHeight();
+    $(".popPanel").css('bottom',footerheight);
+    var objPopPanel = $(".popPanel");	
+    var h = objPopPanel.outerHeight();
+    $(".social .weixin").hover(function() {
+        objPopPanel.show();
+    }, function() {
+        objPopPanel.hide();
+    });
+    
+    $("#navigation .weixin").bind('click',function(event) {
+      layer.open({
+        type: 1,
+        title: false,
+        skin: 'layui-layer-demo', //样式类名
+        closeBtn: false, //不显示关闭按钮
+        shift: 2,
+        shadeClose: true, //开启遮罩关闭
+        content: '<img src="http://7bv937.com1.z0.glb.clouddn.com/qcyoung/yangzj1992QRcode.jpg" width="200px"/>'
+      });
+    });
+
+    //返回顶部
+    $(window).bind("scroll",function() {
+      //获取当前垂直位移值
+      var scrollTopNum=$(document).scrollTop(),
+      //获取浏览器当前高度
+      winHeight=$(window).height(),
+      returnTop=$("div.return-top");
+      //滚动条垂直距离大于0时显示，反之隐藏
+      (scrollTopNum>200)?returnTop.fadeIn("fast"):returnTop.fadeOut('fast');
+    });
+
+    // 点击按钮后，滚动条的垂直方向的值逐渐变为0，也就是滑动向上的效果
+    $("div.return-top").click(function() {
+      $("html, body").animate({ scrollTop: 0 }, 800);return false;
+    });
+
 		// Slidebars off-canvas menu
 		$.slidebars();
 

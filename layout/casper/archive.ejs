@@ -1,10 +1,13 @@
 <%
 var title = '';
-if (page.category) title = page.category;
-if (page.tag) title = page.tag;
-if (page.archive){
-  if (page.year) title = page.year + (page.month ? '/' + page.month : '');
-  else title = __('archive_a');
+if(page.category) {
+    title = page.category;
+}
+if(page.tag) {
+    title = page.tag;
+}
+if(page.archive) {
+    title = "归档";
 }
 %>
 
@@ -21,8 +24,22 @@ if (page.archive){
 <section id="services">
     <div class="container">
         <div class="row">
-            <div class="col-md-10 col-md-offset-1">
-                <div class="row boxes">
+            <div class="col-md-2">
+              <div class="row">
+                <h3><%= title %></h3>
+                <% if (page.category){ %>
+                <a href="<%- config.root %>categories"><< 返回标签列表</a> 
+                <% }%>
+                <% if (page.tag){ %>
+                <a href="<%- config.root %>categories"><< 返回标签列表</a> 
+                <% }%>
+                <% if (page.archive){ %>
+                <%- list_archives() %>
+                <% }%>
+              </div>
+            </div>
+            <div class="col-md-9 col-md-offset-1">
+                <div class="row">
                     <% var i=0 %>
                     <% page.posts.each(function(item){ %>
                         <% if(i==4){ %>
@@ -56,3 +73,8 @@ if (page.archive){
         </div>
     </div>
 </section>
+<script>
+$(function() {
+    $(".archive-list-count").addClass("badge");
+});
+</script>
